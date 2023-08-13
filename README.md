@@ -1,17 +1,12 @@
 # wheeling doggies
 
-this is all made very specifically for the wheeling dog race [program guide](http://www.trackinfo.com/trakdocs/?trackcode=gsn$) (click dropdown and then the program guide there.) that is released every day there are races. 
-the goal is to take the table that is presented as pdf and turn it into a database that can be queried to figure out the probability for any race for a winner or odds for that based on attributes of the dogs.
+i don't think i can collect data from the pdf because it's far too variable.
 
-pdfs are annoying as hell and nothing makes sense but these are made consistently the same way so it should be tedious but once it's done it should work until they change something. 
-i am hoping to do this in order to also better understand how pdfs works and be good at extracting textual data from them to assess larger data sets. 
-and also make some money off the dog races.
+but i should be able to get stuff from this website if i ever want to attempt this again. would use automated browsing and saving the html tables into this same format.
 
-### notes for me for now
-
-- understanding the program fields https://www.amwager.com/blog/how-to-read-greyhound-racing-program/
-- the dog names are in images so you gotta save the images, then use tesseract to ocr the names out of the images in order to turn them into text.
-- 
+scrape  through the replays for each day
+https://www.trackinfo.com/video-box.jsp?raceid=gwd%2420230813a02&runnername=Js+Bobby+Bones
+maybe you can unpack this by using the params and the networking tab in dev?
 
 
 ```
@@ -54,3 +49,4 @@ performance
     - 
 
  ```
+

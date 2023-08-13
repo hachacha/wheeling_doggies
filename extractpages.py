@@ -57,7 +57,8 @@ for page_layout in extract_pages("WHEELING-Apr05-Wednesday-Afternoon-Program.pdf
     # 713,685,677,631,603,595,549,521,513,467,439,431,385,357,349,303,275,267,213,185,177,123,95,87
     #so first dog is defined between the confines of 713 and 685.
 # i don't think i want to loop through here. i'd rather go by number if it's all the same. 
-# and do that for each page. will b frustrating.
+# and do that for each page.
+# but just did a test and it's diferent # of elements for each page. hopefully the order is the same tho
     print("going through page layout")
     for element in page_layout:
         # print(element)

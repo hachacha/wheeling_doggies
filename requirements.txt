@@ -1,5 +1,0 @@
-pytesseract
-pdfminer
-pillow
-pdf2image
-pdfminer.six
