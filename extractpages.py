@@ -37,10 +37,15 @@ for page_layout in extract_pages("WHEELING-Apr05-Wednesday-Afternoon-Program.pdf
     # print(vars(page_layout))
     # print(page_layout.pageid)
 
+    # only way to do this is to get all the images on the page at once.
+    print("getting the images\n")
     save_images_from_page(page_layout) #save the images on this first page.
     #once they're saved. get the list.
     img_list = os.listdir('imgs')
     images_we_loop_now = len(img_list)-last_img-1
+
+    # 8 dogs per page
+
 
     for i in range(last_img,images_we_loop_now):
         if i % 3 == 0:
@@ -51,16 +56,17 @@ for page_layout in extract_pages("WHEELING-Apr05-Wednesday-Afternoon-Program.pdf
     # 713,685,677,631,603,595,549,521,513,467,439,431,385,357,349,303,275,267,213,185,177,123,95,87
     #so first dog is defined between the confines of 713 and 685.
 
+    print("going through page layout")
     for element in page_layout:
-        print(element)
+        # print(element)
         if isinstance(element, LTTextContainer):
             # print(vars(element))
-            print('farmer')
-            # print(element.get_text())
+            print(element.get_text())
             # print(element.y1)
+            print(":)")
         elif isinstance(element, LTFigure):
             for e in element:
                 if isinstance(e, LTChar):
                     print('this is the ltchar!!!!!!!!\n\n')
                     text = element.get_text()
-                    print(text)
+                    # print(text)
